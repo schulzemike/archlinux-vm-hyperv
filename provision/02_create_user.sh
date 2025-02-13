@@ -18,7 +18,7 @@ else
     /usr/bin/useradd --create-home --user-group $USER_NAME
     echo -e 'changeme\nchangeme' | /usr/bin/passwd $USER_NAME
 	
-	echo "$USER_NAME ALL=(ALL) ALL" >> /etc/sudoers.d/10_$USER_NAME
+	echo "$USER_NAME ALL=(ALL) NOPASSWD: /usr/bin/systemctl poweroff,/usr/bin/systemctl halt,/usr/bin/systemctl reboot" >> /etc/sudoers.d/10_$USER_NAME
 	
 	mkdir -p $HOME_DIR/.cache
 	mkdir -p $HOME_DIR/.config

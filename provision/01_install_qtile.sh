@@ -12,7 +12,8 @@ packages=(
   qtile
   rofi
   sxhkd
-  xdg-user-dirs
+  xclip
+  xsel
 )
 
 aur_packages=(

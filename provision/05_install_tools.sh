@@ -20,6 +20,8 @@ packages=(
   # libappindicator is required to display the trayicon of the jetbrains-toolbox
   libappindicator-gtk3
   keepassxc
+  net-tools
+  org-xrandr
   # libreoffice-still
   task
   # terraform

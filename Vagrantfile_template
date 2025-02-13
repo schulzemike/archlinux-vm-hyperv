@@ -99,4 +99,3 @@ Vagrant.configure("2") do |config|
 		env: {"USER_NAME": ENV["USER_NAME"], "USER_EMAIL": ENV["USER_EMAIL"],"FULL_NAME": ENV["FULL_NAME"], "DOTFILES_REPO": ENV["DOTFILES_REPO"]}
 	config.vm.provision "shell", path: "provision/05_install_tools.sh", env: { "USER_NAME": ENV["USER_NAME"]}, privileged: false
 end
-# ["C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\/powershell.EXE", "-NoLogo", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass", "&('C:/Program Files/Vagrant/embedded/gems/gems/vagrant-2.4.3/plugins/hosts/windows/scripts/check_credentials.ps1')", "-username", "'mischulze@ADESSO'", "-password", "''"]
